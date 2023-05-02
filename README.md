@@ -79,23 +79,25 @@ git clone https://github.com/Bellagirl-maker/math-magicians
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Prerequisites
+- Git
+- React and Redux linters
 
-To get a local copy up and running, follow these steps.
-
-In order to run this project you need: Text editor and internet browser and github account
+In order to run this project you need:
+- Nodejs
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ### Install
 
 clone this project to your local environment and open in the browser
+Example commands:
+
+cd your-folder
+
+
+git clone https://github.com/Bellagirl-maker/math-magicians
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-### Usage
-
-
-Use this project in web browsers.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -125,7 +127,7 @@ You can deploy this project on GitHub Pages
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Animations**
+- [ ] **Using the fetch API to get quotes**
 - [ ] **Interactivity** 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
