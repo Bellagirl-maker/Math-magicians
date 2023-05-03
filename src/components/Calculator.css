@@ -44,6 +44,6 @@
   cursor: pointer;
 }
 
-.yellow {
+.Keys:last-child {
   background-color: rgb(250, 158, 29);
 }

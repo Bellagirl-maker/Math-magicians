@@ -1,42 +1,55 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Keys from './Keys';
 import './Calculator.css';
+import calculate from '../logic/calculate';
+// import { useState } from 'react';
 
-const Calculator = () => (
-  <div className="calculator">
-    <div className="display">
-      <span>0</span>
-    </div>
-    <div className="operators">
-      <Keys name="AC" />
-      <Keys name="+/-" />
-      <Keys name="%" />
-      <Keys name="÷" kColor="yellow" />
-    </div>
-    <div className="row">
-      <Keys name="7" />
-      <Keys name="8" />
-      <Keys name="9" />
-      <Keys name="x" kColor="yellow" />
-    </div>
-    <div className="row">
-      <Keys name="4" />
-      <Keys name="5" />
-      <Keys name="6" />
-      <Keys name="-" kColor="yellow" />
-    </div>
-    <div className="row">
-      <Keys name="1" />
-      <Keys name="2" />
-      <Keys name="3" />
-      <Keys name="+" kColor="yellow" />
-    </div>
-    <div className="row">
-      <Keys name="0" kColor="zero" />
-      <Keys name="." />
-      <Keys name="=" kColor="yellow" />
-    </div>
-  </div>
-);
+const Calculator = () => {
+  const [result, setResult] = useState({
+    total: 0,
+    next: null,
+    operation: null,
+  });
 
+  const handleClick = (button) => {
+    setResult(calculate(result, button));
+  };
+
+  const calcBoard = [
+    ['AC', '+/-', '%', '÷'],
+    ['7', '8', '9', 'x'],
+    ['4', '5', '6', '-'],
+    ['1', '2', '3', '+'],
+    ['0', '.', '='],
+  ];
+
+  return (
+    <div className="calculator">
+      <div className="display">
+        <span>
+          {result?.total}
+          {' '}
+          {result?.operation}
+          {' '}
+          {result?.next}
+        </span>
+      </div>
+
+      {
+      calcBoard.map((row) => (
+        <div key={`line${row[0]}`} className="row">
+          {row.map((button) => (
+            <Keys
+              Key={button}
+              name={button}
+              clickHandle={() => handleClick(button)}
+              kColor={button === '0' ? 'zero' : ''}
+            />
+          ))}
+        </div>
+      ))
+    }
+    </div>
+  );
+};
 export default Calculator;
