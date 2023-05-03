@@ -41,8 +41,8 @@ const Calculator = () => {
           {row.map((button) => (
             <Keys
               Key={button}
-              name={button}
-              clickHandle={() => handleClick(button)}
+              value={button}
+              handleBtnClick={() => handleClick(button)}
               kColor={button === '0' ? 'zero' : ''}
             />
           ))}
