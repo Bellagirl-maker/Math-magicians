@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Keys from './Keys';
 import './Calculator.css';
 import calculate from '../logic/calculate';
-// import { useState } from 'react';
 
 const Calculator = () => {
   const [result, setResult] = useState({
