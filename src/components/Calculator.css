@@ -4,10 +4,104 @@
   box-sizing: border-box;
 }
 
-.calculator {
-  margin: 5vw 35vw 5vw;
+.calc {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5rem;
+  margin: 6vw 20vw 6vw 20vw;
 }
 
+.calc-container {
+  align-items: center;
+  border: 1px solid #fff;
+  display: flex;
+  flex: 1 1;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10%;
+}
+
+.display {
+  background-color: #9c9b9b;
+  color: #fff;
+  display: flex;
+  font-size: 1.5rem;
+  justify-content: flex-end;
+  padding: 1rem;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+}
+
+.Keys {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border: solid 0.5px #ddd;
+  font-size: 1rem;
+  width: calc(80vw / 4);
+}
+
+.Keys:hover {
+  cursor: pointer;
+}
+
+.Keys:last-child {
+  background-color: rgb(250, 158, 29);
+}
+
+.zero {
+  flex: 2;
+}
+
+@media screen and (min-width: 378px) {
+  .cal {
+    flex-direction: row;
+    width: var(--container-lg);
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .calculator {
+    width: 40%;
+    margin: 0;
+  }
+
+  .Keys {
+    width: calc((0.4 * 70vw) / 4);
+  }
+}
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.calc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.calculator {
+  width: 50%
+   /* align-items: center;
+    border: 1px solid #fff;
+    display: flex;
+    flex: 1 1;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10%; */
+
+/*
 .display {
   padding: 1rem;
   background-color: rgba(0, 0, 0, 0.3);
@@ -26,16 +120,21 @@
 }
 
 .Keys {
-  display: flex;
+  align-items: center;
+  border: 0.5px solid #ddd;
+  font-size: .8rem;
+  justify-content: center;
+  padding: 1rem 1.5rem;
+  /* display: flex;
   justify-content: center;
   align-items: center;
   padding: 1rem;
   border: solid 0.5px #ddd;
   font-size: 1rem;
   width: 5rem;
-  flex: 1;
-}
+  flex: 1; */
 
+/*
 .zero {
   flex: 2.4;
 }
@@ -46,4 +145,4 @@
 
 .Keys:last-child {
   background-color: rgb(250, 158, 29);
-}
+} */
