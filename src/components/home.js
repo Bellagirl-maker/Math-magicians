@@ -4,7 +4,7 @@ import './home.css';
 const Home = () => (
   <div className="container">
     <h1 className="heading">Welcome to our page</h1>
-    <p>
+    <p className="Paragraph">
       Lorem Ipsum is simply dummy text of the printing and typesetting industry.
       Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s,
       <br />
