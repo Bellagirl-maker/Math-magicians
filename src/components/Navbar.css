@@ -1,0 +1,37 @@
+.navbar {
+  width: 100%;
+  background-color: rgb(250, 158, 29);
+  margin-bottom: 2rem;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.logo {
+  flex: 1;
+}
+
+.nav-link {
+  padding: 0 1rem;
+}
+
+.nav-links .nav-link:last-child ::before {
+  content: '|';
+  position: relative;
+  right: 0.5rem;
+}
+
+.nav-links .nav-link:nth-child(2) ::after {
+  content: '|';
+  position: relative;
+  left: 0.5rem;
+}
+
+.routes {
+  text-decoration: none;
+  color: black;
+}
