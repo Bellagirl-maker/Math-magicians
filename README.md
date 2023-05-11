@@ -51,7 +51,7 @@ Read a random math-related quote
 
 This Project was built with REACT.
 
-### [Live Link] (https://math-magicians-app-6med.onrender.com)
+###  - [🚀 Live Link](#https://math-magicians-app-6med.onrender.com) 
 
 ### Key Features <a name="key-features"></a>
 
