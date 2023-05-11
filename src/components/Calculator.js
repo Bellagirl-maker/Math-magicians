@@ -36,21 +36,18 @@ const Calculator = () => {
           </span>
         </div>
 
-        {
-      calcBoard.map((row) => (
-        <div key={`line${row[0]}`} className="row">
-          {row.map((button) => (
-            <Keys
-              Key={button}
-              value={button}
-              handleBtnClick={() => handleClick(button)}
-              kColor={button === '0' ? 'zero' : ''}
-            />
-          ))}
-        </div>
-      ))
-
-    }
+        {calcBoard.map((row) => (
+          <div key={`line${row[0]}`} className="row">
+            {row.map((button) => (
+              <Keys
+                Key={button}
+                value={button}
+                handleBtnClick={() => handleClick(button)}
+                kColor={button === '0' ? 'zero' : ''}
+              />
+            ))}
+          </div>
+        ))}
       </div>
     </div>
   );

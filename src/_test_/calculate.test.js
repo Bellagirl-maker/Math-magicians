@@ -1,5 +1,6 @@
 import operate from '../logic/operate';
 import calculate from '../logic/calculate';
+import '@testing-library/jest-dom/extend-expect';
 
 describe('Should perform basic operation', () => {
   it('should Add numbers: 1 + 1 to equal 2', async () => {
