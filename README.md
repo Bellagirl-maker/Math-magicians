@@ -51,8 +51,9 @@ Read a random math-related quote
 
 This Project was built with REACT.
 
-### Key Features <a name="key-features"></a>
+### Live Link https://math-magicians-app-6med.onrender.com
 
+### Key Features <a name="key-features"></a>
 
 Math magicians is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to:
 
