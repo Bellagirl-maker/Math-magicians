@@ -51,7 +51,7 @@ Read a random math-related quote
 
 This Project was built with REACT.
 
-### Live Link https://math-magicians-app-6med.onrender.com
+### [Live Link] (https://math-magicians-app-6med.onrender.com)
 
 ### Key Features <a name="key-features"></a>
 
@@ -118,7 +118,7 @@ You can deploy this project on GitHub Pages
 
 - GitHub: [@githubhandle](https://github.com/Bellagirl-maker)
 - Twitter: [@twitterhandle](https://twitter.com/isabella_otoo)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/isabella-otoo-935901146/)
+- LinkedIn: [@LinkedIn](https://www.linkedin.com/in/isabella-otoo-935901146/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
